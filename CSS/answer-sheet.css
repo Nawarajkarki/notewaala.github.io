@@ -1,0 +1,293 @@
+
+
+
+
+
+.fa-block-question{
+  color: white;
+  font-size: 200px;
+}
+
+/*  */
+.section {
+  height: fit-content;
+  margin-top: 50px;
+}
+.subject-name{
+  font-size: 45px;
+}
+.sub-links {
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.links {
+  font-size: 16px;
+  padding: 8px 10px;
+  margin: 0px 10px;
+  border: 3px solid var(--color1);
+  border-radius: 6px;
+  color: var(--color1);
+}
+
+
+.the-container{
+  width: 100%;
+  background-color: var(--color2);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+
+.qno-yrs{
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#year {
+  font-size: 16px;
+  margin: 10px 10px;
+  padding: 6px 9px;
+  border-radius: 10px;
+}
+
+.qno-num {
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#num {
+  font-size: 12px;
+  margin: 0px 10px;
+  padding: 5px 8px;
+  border: 3px solid var(--color1);
+  border-radius: 156px;
+  width: fit-content;
+  font-weight: 500;
+}
+
+
+.links:hover,
+#year:hover,
+#num:hover {
+  background-color: var(--color1);
+  color: #121212;
+}
+
+.active {
+  background-color: var(--color1);
+  color: #121212;
+}
+
+/* ------answer-sheet --- */
+
+.answer-sheet {
+  flex-wrap: wrap;
+}
+
+.question{
+  margin-bottom: 30px;
+}
+
+.question .no,
+.ans-logo {
+  margin-right: 20px;
+}
+
+.show-answer {
+  width: fit-content;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: var(--color1);
+  font-size: 12px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.show-answer  p {
+  font-size: 12px;
+  color: #121212;
+}
+.fa-arrow-right-long {
+  margin-left: 5px;
+  color: #121212;
+}
+
+/* -------- Question Style ----- */
+  /* Questions  */
+
+  #questions-section{
+    margin-bottom: 0px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  #questions-section  p{
+    font-size: 22px;
+  }
+  .question{
+    width: 95%;
+  }
+  .question ol {
+    list-style: lower-alpha;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .question ul{
+    list-style: disc;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .question ol li,ul li {
+    margin: 4px 0px;
+    opacity: 10;
+  }
+  .qns-no {
+    width: 100px;
+  }
+  .qns-no>p {
+    line-height: 1.5;
+    
+}
+  .qno {
+    font-size: 18px;
+    line-height: 1.5;
+  } 
+  
+  .question > p,
+  li > p{
+    display: inline;
+    font-weight: 300;
+    color: #e5e5e5;
+  }
+  
+  .question > .mathjax,
+  li > .mathjax{
+    display: inline-block;
+    width: fit-content;
+    font-size: 16px;
+  
+  }
+  pre{
+    width: 100%;
+  }
+
+/*   ---- Answers style ---- */
+.qno,.qns-no{
+  font-size: 26px;
+  font-family: var(--inter);
+}
+.para {
+  font-size: 18px;
+  line-height: 1.5;
+} 
+.ans-detail{
+  padding-top: 10px;
+}
+
+.ans{
+  font-size: 20px;
+  font-family: var(--inter);
+}
+
+
+
+
+/* Tables */
+table{
+  width: 95%;
+  text-align: left;
+  font-size: 18px;
+  margin: 30px auto;
+}
+table,tr,th,td{
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  height: 40px;
+}
+td{
+  padding: 15px;s
+}
+
+@media (max-width: 1200px) {
+  .subject-name {
+    font-size: 35px;
+  }
+  .links {
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .answer-sheet {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section,
+  .answer-sheet {
+    margin-top: 30px;
+  }
+  .subject-name {
+    font-size: 30px;
+  }
+  .sub-links,
+  .qno-num {
+    margin-top: 20px;
+  }
+  .answer-sheet {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .subject-name {
+    font-size: 24px;
+  }
+  .links {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+
+  .section,
+  .answer-sheet {
+    margin-top: 20px;
+  }
+  .sub-links,
+  .qno-num {
+    margin-top: 10px;
+  }
+  .answer-sheet {
+    width: 100%;
+    border: none;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  #num {
+    font-size: 10px;
+    margin: 5px 8px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .answer {
+    flex-direction: column;
+  }
+  .answer .ans-logo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

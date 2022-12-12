@@ -1,0 +1,71 @@
+/* @import url("GLOBAL.CSS"); */
+
+footer {
+  padding-top: 80px;
+  height: 350px;
+  background-color: var(--color2);
+  align-items: center;
+  color: rgb(191, 191, 191);
+  width: 100%;
+}
+
+.footer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1600px;
+}
+
+.footer-sec {
+  width: 20%;
+  color: white;
+}
+#sec1 {
+  width: 30%;
+}
+#sec1 p {
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+.email {
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  color: var(--color1);
+  letter-spacing: 1px;
+}
+.foot-head {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.footer-sec ul {
+  padding-left: 12px;
+}
+.footer-sec li {
+  margin-top: 6px;
+}
+
+.footer-sec a:hover {
+  color: var(--color1);
+  text-decoration: underline;
+  transition-delay: 0.1s;
+}
+
+@media (max-width: 700px) {
+  footer {
+    height: fit-content;
+  }
+  .footer #sec1 {
+    width: 100%;
+  }
+  .footer .footer-sec {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .footer-sec ul {
+    padding-left: 20px;
+  }
+}

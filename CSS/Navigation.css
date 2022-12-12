@@ -1,0 +1,247 @@
+
+nav {
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: var(--dark-bg);
+  border-bottom: 1px solid rgb(170, 170, 170);
+  z-index: 5;
+}
+
+.nav-bar {
+  width: 75%;
+  justify-content: space-between;
+  max-width: 1600px;
+}
+
+.nav-left,
+.nav-right {
+  width: 25%;
+}
+
+/*  NAV - LINKS  */
+.nav-left{
+  align-items: center;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.nav-links {
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  
+}
+.nav-links li a {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.nav-links li a:hover {
+  color: var(--color1);
+}
+
+/* NAV-MID */
+
+.nav-mid {
+  width: fit-content;
+}
+nav .nav-btn i {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+.nav-mid .site-name {
+  font-size: 29px;
+}
+
+/* ---------- NAV-RIGHT ------- */
+
+.nav-right {
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-search {
+  height: fit-content;
+}
+.nav-right .signin {
+  width: 80%;
+  justify-content: space-between;
+}
+
+.signin .register {
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  background-color: #06d6a0;
+  background-color: var(main-color);
+  color: #121212;
+  border-radius: 3px;
+}
+
+.signin .login {
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  background-color: #06d6a0;
+  color: #121212;
+  border-radius: 5px;
+}
+
+
+/* Navigation Media query */
+@media (max-width: 1250px) {
+  .nav-left {
+    width: 30%;
+  }
+  .nav-right {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1025px) {
+
+  
+  .nav-bar{
+    width: 80%
+  }
+  .nav-left{
+    width: 30%;
+  }
+  .nav-right {
+    width: 30%;
+  }
+}
+@media (max-width: 900px){
+  .nav-bar{
+    width: 85%;
+  }
+}
+
+@media (max-width: 769px) {
+
+  .nav-left{
+    width: 15%;
+  }
+  .nav-right{
+    width: 15%;
+  }
+  .nav-bar {
+    width: 90%;
+    margin: auto;
+  }
+ 
+  nav .nav-btn i {
+    display: inline-block;
+    width: fit-content;
+
+  }
+  #click:checked ~ .nav-btn i:before {
+    content: "\f00d";
+  }
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #121212;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  #click:checked ~ .nav-right{
+    display: none;
+  }
+  .nav-links li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  .nav-links li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s;
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  .nav-links li a.active,
+  .nav-links li a:hover {
+    background: none;
+    color: cyan;
+  }
+
+  .nav-mid .site-name {
+    font-size: 24px;
+  }
+  .burger div {
+    display: block;
+  }
+
+  .nav-right{
+    justify-content: flex-end;
+  }
+  
+  .signin{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-mid {
+    width: 50%;
+  }
+
+  .nav-right {
+    width: fit-content;
+  }
+  .signin .login {
+    width: 70%;
+    align-content: center;
+  }
+  .signin .register {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav-mid {
+    width: 58%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .nav-mid {
+    width: 65%;
+  }
+}
+
+.nav-active {
+  transform: translate(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}

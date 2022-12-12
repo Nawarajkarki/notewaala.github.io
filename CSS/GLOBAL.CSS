@@ -1,0 +1,278 @@
+@import url("/CSS/all.css");
+
+:root {
+  --vscode: #193549;
+  /* --color1: #06d6a0; */
+  --color1: #06D6A0;
+  /* --color2: #292F36; */
+  --color2: #232323;
+
+
+  --dark-bg: #121212;
+  --white: #f0f0f0;
+  --textSec: rgb(161, 161, 161);
+  /* font */
+  --inter: "Inter", sans-serif;
+
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  color: var(--white);
+  font-family: var(--inter);
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--dark-bg);
+}
+
+ul {
+  list-style: none;
+}
+
+.no-border{ 
+  border: none;
+}
+/* List style */
+.list-style-none{
+  list-style: none;
+}
+.bullet{
+  list-style-type: disc;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+/* justify content */
+.sp-btwn {
+  justify-content: space-between;
+}
+
+.sp-ar {
+  justify-content: space-around;
+}
+
+.sp-evn {
+  justify-content: space-evenly;
+}
+.justify-cen {
+  justify-content: center;
+}
+.align-cen {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* width */
+.width75 {
+  width: 75%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+/* Margin */
+/* margin -top */
+.mt-0{
+  margin-top: 0px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mt-40,
+.ml-40 {
+  margin-top: 40px;
+}
+.mt-50{
+  margin-top: 50px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.mt-80{
+  margin-top: 80px;
+}
+.mt-90{
+  margin-top: 90px;
+}
+.mt-100
+ {
+  margin-top: 100px;
+}
+/* margin -bottom */
+.mb-10{
+  margin-bottom: 10px;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+.mb-40{
+  margin-bottom: 40px;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+.mb-60{
+  margin-bottom: 60px;
+}
+.mb-70{
+  margin-bottom: 70px;
+}
+.mb-80{
+  margin-bottom: 80px;
+}
+.mb-90{
+  margin-bottom: 90px;
+}
+.mb-100
+ {
+  margin-bottom: 100px;
+}
+/* margin -left */
+.ml-0{
+  margin-left: 0px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.ml-15{
+  margin-left: 15px;
+}
+.ml-20{
+  margin-left: 20px;
+}
+.ml-30{
+  margin-left: 30px;
+}
+.ml-40{
+  margin-left: 40px;
+}
+.ml-50{
+  margin-left: 50px;
+}
+.ml-60{
+  margin-left: 60px;
+}
+.ml-70{
+  margin-left: 70px;
+}
+.ml-80{
+  margin-left: 80px;
+}
+.ml-90{
+  margin-left: 90px;
+}
+.ml-100
+ {
+  margin-left: 100px;
+}
+
+/* margin -right */
+.mr-10{
+  margin-right: 10px;
+}
+.mr-15{
+  margin-right: 15px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.mr-30{
+  margin-right: 30px;
+}
+.mr-40{
+  margin-right: 40px;
+}
+.mr-50{
+  margin-right: 50px;
+}
+.mr-60{
+  margin-right: 60px;
+}
+.mr-70{
+  margin-right: 70px;
+}
+.mr-80{
+  margin-right: 80px;
+}
+.mr-90{
+  margin-right: 90px;
+}
+.mr-100
+ {
+  margin-right: 100px;
+}
+
+/* Font sizes */
+
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+/* Font weights */
+.wt-500 {
+  font-weight: 500;
+}
+.wt-600 {
+  font-weight: 600;
+}
+.wt-700 {
+  font-weight: 700;
+}
+
+/* Text decoration */
+.underline {
+  text-decoration: underline;
+}
+
+/* sapcint */
+.lt-sp {
+  letter-spacing: 1.1px;
+}
+
+/* margin */
+.mtb-2 {
+  margin: 2px 0px;
+}
+
+
+
+/*   ----- Variables -------- */

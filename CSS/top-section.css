@@ -1,0 +1,188 @@
+
+.section {
+    height: fit-content;
+    margin-top: 50px;
+  }
+  .subject-name {
+    font-size: 45px;
+  }
+  .sub-links {
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .sub-links .links {
+    margin: 0px 8px;
+  }
+  .links {
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 2px solid var(--color1);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color1);
+  }
+  .qno-yrs{
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #year {
+    font-size: 14px;
+    margin: 0px 10px;
+    padding: 6px 9px;
+    border-radius: 10px;
+  }
+  
+  .links:hover,
+  #year:hover {
+    background-color: var(--color1);
+    color: #121212;
+  }
+  
+  .active {
+    background-color: var(--color1);
+    color: #121212;
+  }
+  
+
+/*  */
+
+/*  
+Tables   
+table{
+  width: 60vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+th,td{
+  height: 35px;
+}
+table,th,td{
+  border: 2px solid whitesmoke;
+  border-collapse: collapse;
+} */
+
+  
+/*  --------------------- Media Querry ----------------- */
+
+@media (max-width: 1200px) {
+    .subject-name {
+      font-size: 35px;
+    }
+    .links {
+      font-size: 17px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    
+  }
+  
+  @media (max-width: 1024px) {
+    .qno-paper {
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section,
+    .qno-paper {
+      margin-top: 30px;
+    }
+    .subject-name {
+      font-size: 30px;
+    }
+    .sub-links,
+    .qno-yrs {
+      margin-top: 20px;
+    }
+    .qno-paper {
+      width: 90%;
+    }
+    .image {
+      width: 45vw;
+  }
+  }
+  
+  @media (max-width: 550px) {
+    .subject-name {
+      font-size: 24px;
+    }
+    .links {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 3px;
+    }
+  
+    .qno-paper{
+      width: 95%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .sub-links,
+    .qno-yrs {
+      margin-top: 10px;
+    }
+   
+  
+    #new-course {
+      font-size: 18px;
+    }
+    .group {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    #long-short h3,
+    .attempt h3 {
+      font-size: 16px;
+    }
+  
+    
+  
+    #sec-2 {
+      height: 80px;
+    }
+  
+    #sec-2 div {
+      font-weight: 300;
+    }
+   
+  
+    .qno {
+      font-size: 18px;
+    }
+  
+    .qno-paper .font-18,
+    .qno {
+      font-size: 16px;
+    }
+    .image {
+      width: 55vw;
+  }
+  table{
+    width: 70vw;
+  }
+
+}
+  @media (max-width: 425px) {
+    #sec-2 {
+      flex-wrap: wrap;
+      height: fit-content;
+    }
+    #sec-2 #left,
+    #sec-2 #right {
+      width: 100%;
+    }
+    #sec-2 #right {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      margin-top: 20px;
+    }
+   
+  }
+  

@@ -1,0 +1,254 @@
+/* ----- Navigation ------ */
+
+.navigation {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1.5px solid rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: var(--dark-bg);
+}
+
+.nav-bar {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+}
+
+.nav-left {
+  width: 23%;
+}
+
+.nav-links {
+  justify-content: space-between;
+}
+.nav-links > li {
+  margin: 0px 9px;
+  padding: 12px 20px;
+}
+.nav-links li a {
+  font-size: 1.1rem;
+}
+
+/*  ------------ The drop down menu ----------- */
+
+.sub-menu1 {
+  display: none;
+  background-color: #121212;
+  margin-top: 15px;
+  margin-left: -25px;
+}
+.sub-menu1 ul {
+  display: block;
+}
+.sub-menu1 ul li {
+  width: 200px;
+  border-bottom: 1px dotted #fff;
+  padding: 10px;
+  margin: 10px 0px;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.sub-menu1 > ul > li:last-child {
+  border: none;
+}
+.sub-memu1 ul li a:hover {
+  color: --var(--color1);
+}
+
+.sub-menu1 {
+  position: absolute;
+  background-color: #121212;
+  margin-top: -1px;
+  margin-left: -25px;
+}
+.sub-menu1 ul li a:hover {
+  color: rgb(42, 229, 229);
+}
+
+.nav-links > li:hover .sub-menu1 {
+  display: block;
+}
+
+/*  */
+.nav-mid {
+  /* width: 30%; */
+  align-items: center;
+  justify-content: center;
+}
+/* .burger {
+  display: none;
+} */
+
+.nav-mid .site-name {
+  font-size: 29px;
+}
+
+.nav-right {
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-search {
+  height: fit-content;
+}
+.nav-right .signin {
+  width: 80%;
+  justify-content: space-between;
+}
+
+.signin .register {
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  background-color: #06d6a0;
+  background-color: var(main-color);
+  color: #121212;
+  border-radius: 3px;
+}
+
+.signin .login {
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  background-color: #06d6a0;
+  color: #121212;
+  border-radius: 5px;
+}
+
+/* Navigation Media query */
+@media (max-width: 1250px) {
+  .nav-left {
+    width: 30%;
+  }
+  .nav-right {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .nav-left {
+    width: 30%;
+  }
+  .nav-right {
+    width: 30%;
+  }
+}
+
+@media (max-width: 769px) {
+  .nav-bar {
+    width: 90%;
+    margin: auto;
+  }
+
+  .nav-mid .site-name {
+    font-size: 24px;
+  }
+  .nav-left,
+  .signin {
+    display: none;
+  }
+  /* .nav-left {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid white;
+    height: 70vh;
+    width: 40vw;
+    margin-left: -40px;
+    position: absolute;
+    left: 0px;
+    top: 4.375rem;
+    background-color: #344541;
+    z-index: 23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-100%);
+  } */
+
+  .nav-links {
+    flex-direction: column;
+  }
+  .nav-mid {
+    width: 40%;
+    justify-content: space-between;
+  }
+  .burger div {
+    display: block;
+  }
+
+  .nav-right .signin {
+    width: 80%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-mid {
+    width: 40%;
+  }
+  .nav-right {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-mid {
+    width: 50%;
+  }
+
+  /* .signin {
+    position: absolute;
+    top: 4.375rem;
+    left: 0px;
+    z-index: 23;
+    width: 40vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     transform: translate(-100%); 
+    transition: transform 0.5s ease-in;
+  } */
+
+  .nav-right {
+    width: fit-content;
+  }
+  .signin .login {
+    width: 70%;
+    align-content: center;
+  }
+  .signin .register {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav-mid {
+    width: 58%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .nav-mid {
+    width: 65%;
+  }
+}
+
+.nav-active {
+  transform: translate(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}

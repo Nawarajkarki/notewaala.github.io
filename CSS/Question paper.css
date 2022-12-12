@@ -1,0 +1,353 @@
+
+.section {
+    height: fit-content;
+    margin-top: 50px;
+  }
+  .subject-name {
+    font-size: 45px;
+  }
+  .sub-links {
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .sub-links .links {
+    margin: 0px 8px;
+  }
+  .links {
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 2px solid var(--color1);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color1);
+  }
+  .qno-yrs{
+    justify-content: center;
+    margin-top: 30px;
+  }
+  #year {
+    font-size: 14px;
+    margin: 0px 10px;
+    padding: 6px 9px;
+    border-radius: 10px;
+  }
+  
+  .links:hover,
+  #year:hover {
+    background-color: var(--color1);
+    color: #121212;
+  }
+  
+  .active {
+    background-color: var(--color1);
+    color: #121212;
+  }
+  
+
+/*  */
+
+  .qno-paper {
+    padding: 13px;
+  /* border: 1px solid whitesmoke; */
+  border-radius: 16px;
+  background-color: var(--color2);
+
+  margin: 50px auto;
+  }
+
+
+/* Section one */
+.university-name,
+.institute-name,
+.date{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+  .institute-name {
+    font-weight: 500;
+  }
+  
+  #sec-2 {
+    height: 110px;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  #sec-2 div {
+    font-weight: 300;
+  }
+
+  .level,
+  .faculty,
+  .marks{
+    margin: 2px 0px;
+    font-size: 18px;
+  }
+  /* sec - 3*/
+  #sec-3{
+    margin: 60px 0px 40px 0px;
+  }
+
+  #new-course{
+    margin: 30px 0px 10px 0px;
+  }
+  .new-course > p{
+    font-size: 18px;
+    margin: 2px 0px;
+  }
+
+  /* Group A */
+  .group {
+    font-weight: 600;
+    margin: 20px 0px 10px 0px;
+  }
+  #long-short{
+    margin-bottom: 10px;
+  }
+  #long-short > h3{
+    font-weight: 600;
+    letter-spacing: 1.1px;
+  }
+  .attempt{
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  /* Questions  */
+
+  #questions-section{
+    margin: 30px 0px 40px 0px;
+  }
+  .question{
+    flex: 1;
+  }
+  .question ol {
+    list-style: lower-alpha;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .question ul{
+    list-style: disc;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .question ol li,ul li {
+    margin: 4px 0px;
+    opacity: 10;
+  }
+  .qns-no {
+    width: 18px;
+    margin-right: 8px;
+  }
+  .qns-no>p {
+    line-height: 1.5;
+}
+  .qno {
+    font-size: 18px;
+    line-height: 1.5;
+  } 
+  
+  .question > p,
+  li > p{
+    display: inline;
+    font-weight: 400;
+    color: #e5e5e5;
+  }
+  
+  .question > .mathjax,
+  li > .mathjax{
+    display: inline-block;
+    width: fit-content;
+    font-size: 16px;
+  
+  }
+
+  pre{
+    width: 100%;
+  }
+  #group-a > h2{
+    margin-bottom: 20px;
+  }
+  
+  /*  ------------------- SEe Answer ----------------- */
+  
+  .show-answer {
+    width: fit-content;
+    align-items: center;
+    margin-top: 10;
+  }
+  .show-answer a {
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: var(--color1);
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .show-answer a:hover {
+    background-color: #05f3b3;
+  }
+  .show-answer a p {
+    font-size: 12px;
+    color: #121212;
+  }
+  .fa-arrow-right-long {
+    margin-left: 6px;
+    color: #121212;
+  }
+
+
+  /* Images */
+  .image {
+    width: 40vw;
+    margin: auto;
+}
+
+.image>img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tables */   
+table{
+  width: 60vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+th,td{
+  height: 35px;
+}
+table,th,td{
+  border: 2px solid whitesmoke;
+  border-collapse: collapse;
+}
+
+  
+/*  --------------------- Media Querry ----------------- */
+
+@media (max-width: 1200px) {
+    .subject-name {
+      font-size: 35px;
+    }
+    .links {
+      font-size: 17px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .image {
+      width: 40vw;
+  }
+  }
+  
+  @media (max-width: 1024px) {
+    .qno-paper {
+      width: 85%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section,
+    .qno-paper {
+      margin-top: 30px;
+    }
+    .subject-name {
+      font-size: 30px;
+    }
+    .sub-links,
+    .qno-yrs {
+      margin-top: 20px;
+    }
+    .qno-paper {
+      width: 90%;
+    }
+    .image {
+      width: 45vw;
+  }
+  }
+  
+  @media (max-width: 550px) {
+    .subject-name {
+      font-size: 24px;
+    }
+    .links {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 3px;
+    }
+  
+    .qno-paper{
+      width: 95%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .sub-links,
+    .qno-yrs {
+      margin-top: 10px;
+    }
+   
+  
+    #new-course {
+      font-size: 18px;
+    }
+    .group {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    #long-short h3,
+    .attempt h3 {
+      font-size: 16px;
+    }
+  
+    
+  
+    #sec-2 {
+      height: 80px;
+    }
+  
+    #sec-2 div {
+      font-weight: 300;
+    }
+   
+  
+    .qno {
+      font-size: 18px;
+    }
+  
+    .qno-paper .font-18,
+    .qno {
+      font-size: 16px;
+    }
+    .image {
+      width: 55vw;
+  }
+  table{
+    width: 70vw;
+  }
+
+}
+  @media (max-width: 425px) {
+    #sec-2 {
+      flex-wrap: wrap;
+      height: fit-content;
+    }
+    #sec-2 #left,
+    #sec-2 #right {
+      width: 100%;
+    }
+    #sec-2 #right {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      margin-top: 20px;
+    }
+    .image {
+      width: 65vw;
+  }
+  }
+  

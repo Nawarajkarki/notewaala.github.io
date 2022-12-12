@@ -1,0 +1,107 @@
+
+
+:root {
+  --sem-sub-color: #d9d9d9;
+}
+
+b {
+  color: var(--color1);
+  font-weight: 500;
+  margin-left: 15px;
+}
+.sem-sub-heading {
+  background-color: var(--color2);
+  padding: 40px 0px;
+}
+
+.sem-sub-heading .header {
+  align-items: center;
+}
+
+.header .course-name {
+  font-size: 45px;
+  color: var(--white);
+}
+  .sem-sub-heading .header p {
+    margin-top: 10px;
+    color: var(--textSec);
+}
+
+/* ----Semisters and Subjects 0------ */
+
+.the-sec {
+  width: 91%;
+  max-width: 1600px;
+  justify-content: space-between;
+  margin: 100px auto;
+  flex-wrap: wrap;
+}
+
+.sem-sub {
+  width: 24%;
+  min-width: 300px;
+  background-color: var(--color2);
+  padding: 12px 0px 12px 10px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.Semester,
+.year {
+  font-size: 18px;
+  color: var(--white);
+  color: white;
+  font-weight: 600;
+}
+
+.subjects {
+  margin: 8px 0px 10px 5px;
+  list-style: none;
+}
+.subjects a {
+  display: inline-block;
+  width: fit-content;
+}
+
+.sub-links {
+  font-size: 18px;
+  color: var(--textSec);
+
+  margin: 10px 0px;
+}
+.elective {
+  margin: 15px 0px;
+}
+.sub-links:hover {
+  color: var(--color1);
+  color: #83ffde;
+}
+
+/* Semester & Subject heights */
+.ht-lg {
+  height: 25rem;
+}
+
+@media (max-width: 1024px) {
+  .the-sec {
+    width: 95%;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .the-sec {
+    justify-content: space-between;
+  }
+  .sem-sub {
+    width: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .the-sec {
+    justify-content: space-around;
+  }
+  .sem-sub {
+    width: 80%;
+  }
+}

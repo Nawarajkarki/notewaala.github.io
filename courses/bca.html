@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/CSS/all.css" />
+    <link rel="stylesheet" href="/CSS/GLOBAL.CSS" />
+    <link rel="stylesheet" href="/CSS/Navigation.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+
+
+    <style>
+        .abc {
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .xyz {
+            font-size: 80px;
+            font-family: sans-serif;
+            color: var(--color1);
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="flex-column">
+        <div class="nav-bar flex-row">
+            <!-- LEFT -->
+            <div class="nav-left">
+                <input type="checkbox" id="click" />
+                <label for="click" class="nav-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-links flex-row sp-btwn">
+                    <li><a href="/courses/csit.html">CSIT</a></li>
+                    <li><a href="/courses/bit.html">BIT</a></li>
+                    <li><a href="/courses/bca.html">BCA</a></li>
+                    <li><a href="/courses/bim.html">BIM</a></li>
+                </ul>
+            </div>
+            <!-- CENTER -->
+            <div class="nav-mid flex-row">
+                <a class="site-name" href="/index.html"> NOTE WAALA</a>
+            </div>
+            <!-- RIGHT -->
+            <div class="nav-right flex-row sp-btwn">
+                <div class="nav-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="signin flex-row">
+                    <div class="register">Register</div>
+                    <div class="login">Log in</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main  -->
+    <div class="abc">
+
+        <h4 class="xyz">Coming Soon</h4>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+i{
+  margin-right: 4px;
+}
+
+ 
+  .active {
+    background-color: var(--color1);
+    color: #121212;
+  }
+
+
+  /*  */
+  /*  */
+
+  .syllabusPage {
+    width: 75%;
+  background-color: var(--dark-bg);
+  margin: 50px auto;
+  }
+
+  .content-bg{
+    background-color: var(--color2);
+    border-radius: 16px;
+    padding: 16px ;
+  }
+  .university-details{
+    display: inline-block;
+    width: fit-content;
+
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    min-width: 700px;
+    max-width: 800px;
+  }
+  .university-details > h3{
+    margin-top: 8px;
+  }
+
+ /*  */
+ .border-all-table,
+ .border-all-table > tr,
+ .border-all-table > th,
+ .border-all-table > td{
+  border: 1px solid white;
+  border-collapse: collapse;
+ }
+ /*  */
+
+ 
+.syllabSumTable{
+  margin: auto;
+  width: 700px;
+  border-radius: 12px;
+  padding: 0px 12px;
+  background-color: var(--color2);
+ }
+
+ .labTable{
+  margin: 30px auto 0px auto;
+
+ }
+ .labTable  tr,
+ .labTable th,
+ .labtable td{
+  margin-top: 1222px;
+ }
+
+
+ table, tr, th, td{
+  border-bottom: 1px solid #121212;
+  border-collapse: collapse;
+  padding-left: 12px;
+ }
+
+
+
+tr{
+  height: 40px;
+  text-align: left;
+}
+
+
+.no-border{
+  border: none;
+}
+
+.the-container{
+  width: 100%;
+  margin-top: 50px;
+  background-color: var(--color2);
+  border-radius: 12px;
+}
+
+.the-container > .heading{
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+
+.the-container > .heading > .logo,
+.the-container > .heading > .title{
+  display: inline-block;
+  width: fit-content;
+  margin-inline-end: 15px;
+  font-size: 20px;
+}
+
+.head{
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+.head2{
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.unit > div{
+  margin-bottom: 10px;
+}
+.unit:nth-child(1){
+  margin-top: 10px;
+}
+.unit{
+  margin: 45px 0px;
+}
+.gap-up{
+  margin: 20px 0px 10px 0px;
+}
+.unit-name, 
+.teaching-hour{
+  font-size: 18px;
+}
+
+.the-container> .para{
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.para p{
+  /* color: var(--textSec); */
+  font-size: 16px;
+  margin: 0px 15px;
+}
+.para  p, li{
+  color: var(--textSec);
+}
+
+.course-discription p{
+  
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.para ol{
+  margin: 20px 0 40px 35px;
+}
+ .para li{
+  margin: 5px 0px ;
+}
+.lab-and-practicals .para .head{
+  margin-top: 30px;
+}
+
+
+  @media (max-width: 1024px) {
+    .syllabusPage {
+      width: 85%;
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .syllabusPage {
+      margin-top: 30px;
+    }
+    .syllabusPage {
+      width: 90%;
+    }
+ 
+  }
+
+  @media (max-width: 550px) {
+    .syllabusPage{
+      width: 95%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+   
+    .syllabusPage .font-18 {
+      font-size: 16px;
+    }
+  
+
+}

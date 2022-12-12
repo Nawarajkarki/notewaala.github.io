@@ -1,0 +1,41 @@
+Doc.1 --> To integrate image in any questions
+
+<div class="image">
+    <img src="" alt="">
+</div>
+
+The above code with the image src should be put just after the closing tag of para tag i.e; </p> with class="qno" As in
+the example below
+<!-- Question-no2 -->
+<div id="questions" class="mt-30 mb-40 flex-row">
+    <div class="qns-no">
+        <p>2. </p>
+    </div>
+    <div class="question">
+        <p class="qno">This are contains the Question
+        </p>
+        <div class="image">
+            <img src="/pictures/CSIT/1 sem Digital Logic/2075-Qno-2.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+Doc.2 ---> Integrate any math equations in the webpage
+
+MathJax is used for inserting beautiful mathematical equations in the webpages with the following line of code in HTML
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+Doc.3 ---> Writing the equations
+
+First of all the math equations are converted into the Tex or LaTex format currently
+(https://www.codecogs.com/eqnedit.php) site
+is used to convert the mathematical equation into LaTex format.
+After the conversion the LaTex form of the mathematical equation should is to be inserted inside the tag below (between
+the $$ .. $$signs)
+<p class="mathjax">$$ $$</p>
+---> the latex form of equation should be inserted between the $$ $$ signs
